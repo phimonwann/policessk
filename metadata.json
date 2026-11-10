@@ -1,0 +1,6 @@
+{
+  "name": "ระบบลาออนไลน์ สภ.ศรีสงคราม",
+  "description": "ระบบบริหารจัดการการลาออนไลน์ ข้าราชการตำรวจ สถานีตำรวจภูธรศรีสงคราม จังหวัดนครพนม",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

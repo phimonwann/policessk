@@ -1,0 +1,139 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'TH SarabunIT๙', 'THSarabunIT9', 'TH Sarabun IT9', 'TH Sarabun New', 'Sarabun', system-ui, -apple-system, sans-serif;
+  --font-serif: 'TH SarabunIT๙', 'THSarabunIT9', 'TH Sarabun IT9', 'TH Sarabun New', 'Sarabun', serif;
+}
+
+@layer base {
+  @font-face {
+    font-family: 'TH SarabunIT๙';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('TH SarabunIT๙'), local('THSarabunIT9'), local('TH Sarabun IT9'), local('TH Sarabun New'), local('Sarabun-Regular'), url('https://fonts.gstatic.com/s/sarabun/v13/DtVmJxKGsUnvl97ur4s.woff2') format('woff2');
+  }
+
+  @font-face {
+    font-family: 'TH SarabunIT๙';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: local('TH SarabunIT๙ Medium'), local('THSarabunIT9-Medium'), local('TH Sarabun IT9 Medium'), local('TH Sarabun New Medium'), local('Sarabun-Medium'), url('https://fonts.gstatic.com/s/sarabun/v13/DtVkJxKGsUnvl97N5rW2xQ.woff2') format('woff2');
+  }
+
+  @font-face {
+    font-family: 'TH SarabunIT๙';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: local('TH SarabunIT๙ SemiBold'), local('THSarabunIT9-SemiBold'), local('TH Sarabun IT9 SemiBold'), local('TH Sarabun New SemiBold'), local('Sarabun-SemiBold'), url('https://fonts.gstatic.com/s/sarabun/v13/DtVkJxKGsUnvl97N5rW2xQ.woff2') format('woff2');
+  }
+
+  @font-face {
+    font-family: 'TH SarabunIT๙';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local('TH SarabunIT๙ Bold'), local('THSarabunIT9-Bold'), local('TH Sarabun IT9 Bold'), local('TH Sarabun New Bold'), local('Sarabun-Bold'), url('https://fonts.gstatic.com/s/sarabun/v13/DtVkJxKGsUnvl97N5rW2xQ.woff2') format('woff2');
+  }
+
+  @font-face {
+    font-family: 'TH SarabunIT๙';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: local('TH SarabunIT๙ Italic'), local('THSarabunIT9-Italic'), local('TH Sarabun IT9 Italic'), local('TH Sarabun New Italic'), local('Sarabun-Italic'), url('https://fonts.gstatic.com/s/sarabun/v13/DtViJxKGsUnvl97uj_s8bg.woff2') format('woff2');
+  }
+
+  @font-face {
+    font-family: 'TH SarabunIT๙';
+    font-style: italic;
+    font-weight: 700;
+    font-display: swap;
+    src: local('TH SarabunIT๙ Bold Italic'), local('THSarabunIT9-BoldItalic'), local('TH Sarabun IT9 Bold Italic'), local('TH Sarabun New Bold Italic'), local('Sarabun-BoldItalic'), url('https://fonts.gstatic.com/s/sarabun/v13/DtVjJxKGsUnvl97uj_sW19S6.woff2') format('woff2');
+  }
+
+  /* Universal TH SarabunIT๙ font applied across all elements in the application */
+  *, ::before, ::after {
+    font-family: 'TH SarabunIT๙', 'THSarabunIT9', 'TH Sarabun IT9', 'TH Sarabun New', 'Sarabun', system-ui, -apple-system, sans-serif !important;
+  }
+
+  html, body, #root, button, input, select, textarea {
+    font-family: 'TH SarabunIT๙', 'THSarabunIT9', 'TH Sarabun IT9', 'TH Sarabun New', 'Sarabun', system-ui, -apple-system, sans-serif !important;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.55;
+    letter-spacing: 0.01em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-heading {
+    font-family: 'TH SarabunIT๙', 'THSarabunIT9', 'TH Sarabun IT9', 'TH Sarabun New', 'Sarabun', system-ui, sans-serif !important;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    line-height: 1.35;
+  }
+
+  p, span, td, th, li, label, div {
+    line-height: 1.55;
+  }
+
+  .font-sarabunit9, .font-sarabunit9 * {
+    font-family: 'TH SarabunIT๙', 'THSarabunIT9', 'TH Sarabun IT9', 'TH Sarabun New', 'Sarabun', serif !important;
+  }
+}
+
+/* Custom scrollbars with gentle maroon accent */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.04);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(136, 19, 55, 0.25);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(136, 19, 55, 0.5);
+}
+
+/* Print Styles for Official Thai Government Leave Documents and Rosters */
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 12mm 15mm 12mm 15mm;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+
+  body, .print-page, * {
+    background: white !important;
+    color: black !important;
+    font-family: 'TH SarabunIT๙', 'THSarabunIT9', 'TH Sarabun IT9', 'TH Sarabun New', 'Sarabun', serif !important;
+    line-height: 1.4 !important;
+  }
+
+  .print-page {
+    page-break-after: always;
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: 100% !important;
+  }
+
+  .print-landscape {
+    page: landscape;
+  }
+}
